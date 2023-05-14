@@ -24,7 +24,7 @@ const Navbar = () => {
     <>
      <header className={styles.header}>
       <div className={styles.logo} title='Arshcode'>
-        <Image src={Logo} alt="Some" />
+        <Image src={Logo} alt="Arshcode" />
       </div>
       <div className={styles.links}>
         <Link href="/">Home</Link>

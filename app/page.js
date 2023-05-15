@@ -4,19 +4,18 @@ import styles from './page.module.css'
 export default function Home() {
   return (
     <>
-    <div className={styles.heroSection}>
-      <div className={styles.videoContainer}>
-        <video autoPlay loop muted>
-          <source src="/bg-arshcode.mp4" type="video/mp4" />
-        </video>
+    <section className={styles.hero}>
+      <div className={styles.herocont}>
+      <div className={styles.text}>
+        <h1>Empowering Your Business With Dynamic-Flaming Web Solutions</h1>
+        <p>Arshcode is a full-service web development agency specializing in creating bespoke web solutions tailored to meet your unique business needs.</p>
+        <button>Contact Us</button>
       </div>
-      <div className={styles.overlay}></div>
-      <div className={styles.content}>
-        <h1>Arshcode - Your One-Stop Shop for Web Development</h1>
-        <p>We offer innovative web development solutions that help your business grow.</p>
-        <a href="#" className={styles.ctaButton}>Get Started</a>
+      <div className={styles.image}>
+        <img src="/1.png" alt="Hero Image" />
       </div>
-    </div>
+      </div>
+    </section>
     </>
   )
 }

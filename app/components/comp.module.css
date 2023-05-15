@@ -59,3 +59,34 @@
 .ico:hover{
     background: rgba(225,225,225,0.1);
 }
+.menuico{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    overflow: hidden;
+}
+.menuico:hover{
+    background: rgba(225,225,225,0.1);
+}
+@media only screen and (max-width: 768px) {
+    .links{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        top: 10%;
+        padding: 10px;
+        background: #1f1f1f;
+        border: 0.1px solid rgba(225,225,225,0.1);
+        border-radius: 4px;
+        right: 10px;
+    } 
+    .menuico{
+        display: flex;
+    }
+}

@@ -4,29 +4,27 @@ import styles from './comp.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '../assets/arshcode.png';
-import { FaGithub, FaInstagram, FaWhatsapp, FaMoon, FaSun } from 'react-icons/fa';
-import { useState } from "react";
+import { FaGithub, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { RiMenu3Line } from 'react-icons/ri';
 
 const Navbar = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    if (isDarkMode) {
-      document.body.style.backgroundColor = "#f1f1f1";
-      document.body.style.color = "#1f1f1f";
-    } else {
-      document.body.style.backgroundColor = "#1f1f1f";
-      document.body.style.color = "#f1f1f1";
-    }
-  };
+  function OpenMenu(){
+    var x = document.getElementById("menu");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+        }
+      }
+
   return (
     <>
      <header className={styles.header}>
       <div className={styles.logo} title='Arshcode'>
         <Image src={Logo} alt="Arshcode" />
       </div>
-      <div className={styles.links}>
+      <div className={styles.links} id='menu'>
         <Link href="/">Home</Link>
         <Link href="/">Services</Link>
         <Link href="/">Products</Link>
@@ -37,7 +35,7 @@ const Navbar = () => {
         <div className={styles.ico}><FaGithub/></div>
         <div className={styles.ico}><FaInstagram/></div>
         <div className={styles.ico}><FaWhatsapp/></div>
-        <div className={styles.ico} onClick={toggleDarkMode}>{isDarkMode ? <FaSun /> : <FaMoon />}</div>
+        <div className={styles.menuico} onClick={OpenMenu}><RiMenu3Line/></div>
       </div>
      </header>
     </>

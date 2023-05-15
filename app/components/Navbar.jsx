@@ -9,7 +9,7 @@ import { RiMenu3Line } from 'react-icons/ri';
 
 const Navbar = () => {
 
-  const [display, setDisplay] = useState('none');
+  const [display, setDisplay] = useState('flex');
 
   function OpenMenu() {
     if (display === 'flex') {

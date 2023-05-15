@@ -13,7 +13,21 @@
 .text {
   width: 100%;
 }
-
+.text span{
+  background: linear-gradient(50deg, cyan, blueviolet);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: SpanTextAni 5s infinite;
+}
+@keyframes SpanTextAni{
+  0%{
+    background-position: 1000px;
+  }
+  100%{
+    background-position: -1000px;
+  }
+}
 .text h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -43,9 +57,17 @@
 .image{
   width: 100%;
   overflow: hidden;
+  height: 100%;
 }
 .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 4px;
+  filter: drop-shadow(-1px, -1px, 10px 0px cyan);
+}
+@media only screen and (max-width: 768px) {
+  .herocont{
+    grid-template-columns: 1fr;
+  }
 }

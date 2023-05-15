@@ -74,6 +74,90 @@
 .menuico:hover{
     background: rgba(225,225,225,0.1);
 }
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 10px;
+    background: rgba(225,225,225,0.2);
+    border-top: 1px solid rgba(225,225,225,0.5);
+}
+.foottop{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.logoHolder{
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.logotext{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: left;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0.1px solid rgba(225, 225, 225, 0.1);
+    white-space: nowrap;
+    border-radius: 4px;
+    width: min-content;
+  }
+  .search input{
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  .search input::placeholder{
+    color: #f1f1f1 !important;
+  }
+  .search span{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+  }
+  .search:hover{
+    background: rgba(225, 225, 225, 0.3);
+  }
+  .footbottom{
+    text-align: center;
+    padding-top: 10px;
+    border-top: 0.1px solid rgba(225, 225, 225, 0.1);
+  }
+  .footmid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    justify-content: space-between;
+  }
+  .footmid a{
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: rgba(225,225,225,0.5);
+    white-space: nowrap;
+  }
+  .footmid a:hover{
+    background: rgba(225, 225, 225, 0.1);
+  }
+  @media only screen and (max-width: 1024px) {
+    .footmid{
+        overflow-x: scroll;
+    }
+  }
 @media only screen and (max-width: 768px) {
     .links{
         display: none;
@@ -88,5 +172,23 @@
     } 
     .menuico{
         display: flex;
+    }
+    .search input{
+        display: none;
+    }
+    .footmid{
+        /* flex-direction: column; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .footmid{
+        display: flex;
+        flex-direction: column;
+    }
+    .logotext{
+        display: none;
     }
 }

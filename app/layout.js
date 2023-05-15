@@ -2,6 +2,7 @@ import './globals.css'
 import { Analytics } from '@vercel/analytics/react';
 import { Inter, Comfortaa } from 'next/font/google'
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 const comfortaa = Comfortaa({ subsets: ['latin'] })
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         <Navbar/>
         {children}
         <Analytics />
+        <Footer/>
         </body>
     </html>
   )

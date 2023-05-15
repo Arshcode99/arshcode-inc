@@ -181,12 +181,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 0;
+        overflow: hidden;
     }
 }
 @media only screen and (max-width: 300px) {
     .footmid{
         display: flex;
         flex-direction: column;
+        overflow: hidden;
     }
     .logotext{
         display: none;

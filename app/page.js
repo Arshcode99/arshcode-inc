@@ -1,5 +1,6 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from 'next/image';
+import HeroImg from './assets/1.png';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         <button>Contact Us</button>
       </div>
       <div className={styles.image}>
-        <img src="/1.png" alt="Hero Image" />
+        <Image src={HeroImg} alt="Hero Image" />
       </div>
       </div>
     </section>

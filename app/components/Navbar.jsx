@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './comp.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,14 +9,15 @@ import { RiMenu3Line } from 'react-icons/ri';
 
 const Navbar = () => {
 
-  function OpenMenu(){
-    var x = document.getElementById("menu");
-        if (x.style.display === "flex") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "flex";
-        }
-      }
+  const [display, setDisplay] = useState('none');
+
+  function OpenMenu() {
+    if (display === 'flex') {
+      setDisplay('none');
+    } else {
+      setDisplay('flex');
+    }
+  }
 
   return (
     <>
@@ -24,7 +25,7 @@ const Navbar = () => {
       <div className={styles.logo} title='Arshcode'>
         <Image src={Logo} alt="Arshcode" />
       </div>
-      <div className={styles.links} id='menu'>
+      <div className={styles.links} id='menu' style={{ display }}>
         <Link href="/">Home</Link>
         <Link href="/">Services</Link>
         <Link href="/">Products</Link>

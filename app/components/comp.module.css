@@ -22,7 +22,7 @@
     overflow: hidden;
 }
 .logo:hover{
-    background: rgba(225,225,225,0.1);
+    background: rgba(0, 0, 0, 0.022);
 }
 .logo img{
     width: 90%;
@@ -38,7 +38,7 @@
     border-radius: 4px;
 }
 .links a:hover{
-    background: rgba(225,225,225,0.1);
+    background: rgba(0, 0, 0, 0.022);
 }
 .icons{
     display: flex;
@@ -57,7 +57,7 @@
     overflow: hidden;
 }
 .ico:hover{
-    background: rgba(225,225,225,0.1);
+    background: rgba(0, 0, 0, 0.022);
 }
 .menuico{
     display: none;
@@ -72,7 +72,7 @@
     overflow: hidden;
 }
 .menuico:hover{
-    background: rgba(225,225,225,0.1);
+    background: rgba(0, 0, 0, 0.022);
 }
 .footer{
     display: flex;
@@ -105,7 +105,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 0.1px solid rgba(225, 225, 225, 0.1);
+    border: 0.1px solid rgba(0, 0, 0, 0.022);
     white-space: nowrap;
     border-radius: 4px;
     width: min-content;
@@ -113,13 +113,14 @@
   .search input{
     padding: 10px 20px;
     border-radius: 4px;
+    color: #1f1f1f;
     cursor: pointer;
     background: transparent;
     border: none;
     outline: none;
   }
   .search input::placeholder{
-    color: #f1f1f1 !important;
+    color: #1f1f1f !important;
   }
   .search span{
     padding: 5px;
@@ -147,7 +148,7 @@
   .footmid a{
     padding: 10px 20px;
     border-radius: 4px;
-    color: rgba(225,225,225,0.5);
+    color: rgba(0,0,0,0.3);
     white-space: nowrap;
   }
   .footmid a:hover{
@@ -165,8 +166,8 @@
         flex-direction: column;
         top: 10%;
         padding: 10px;
-        background: #1f1f1f;
-        border: 0.1px solid rgba(225,225,225,0.1);
+        background: #f1f1f1;
+        border: 0.1px solid rgba(0, 0, 0, 0.022);
         border-radius: 4px;
         right: 10px;
     } 

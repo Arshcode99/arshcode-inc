@@ -22,30 +22,17 @@ a {
 button {
   padding: 10px 20px;
   border-radius: 4px;
-  background: rgba(225, 225, 225, 0.1);
-  color: #f1f1f1;
   cursor: pointer;
   width: min-content;
   border: none;
   white-space: nowrap;
   outline: none;
 }
-button:hover {
-  background: rgba(225, 225, 225, 0.3);
-}
 input, select  {
   padding: 15px;
   border-radius: 4px;
-  background: rgba(225, 225, 225, 0.1);
-  color: #f1f1f1;
   border: none;
   outline: none;
-}
-form, .form{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: left;
 }
 /* ===== Scrollbar CSS ===== */
 /* Firefox */

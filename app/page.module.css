@@ -40,20 +40,60 @@
   margin-bottom: 2rem;
 }
 
-.text button {
-  font-size: 1rem;
-  padding: 0.8rem 1.5rem;
-  background-color: #f1f1f1;
-  color: #1a202c;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+.form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  border: 0.1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  color: #1f1f1f;
+  padding: 5px;
+  width: min-content;
 }
 
-.text button:hover {
+.form input{
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin: 0;
+}
+
+.form button{
+  padding: 10px 20px;
+  background: #1f1f1f;
+  color: #f1f1f1;
+  border-radius: 4px;
+  margin: 0;
+}
+
+.form button:hover {
   transform: translateY(-2px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.actbtn{
+  padding: 10px 20px;
+  background: transparent;
+  color: blueviolet;
+  white-space: nowrap;
+  border-radius: 4px;
+  margin: 0;
+}
+.actbtn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.formholder{
+  position: relative;
+}
+.formholder label{
+  font-size: 10px;
+  padding: 4px 8px;
+  position: absolute;
+  top: -10px;
+  background: #fff;
+  color: #1f1f1f !important;
+  border-radius: 4px;
 }
 .image{
   width: 100%;
@@ -70,5 +110,22 @@
 @media only screen and (max-width: 768px) {
   .herocont{
     grid-template-columns: 1fr;
+    gap: 10px;
+    width: 99%;
+  }
+  .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image img{
+    width: 100%;
+    height: auto;
+  }
+  .actbtn{
+    display: none;
+  }
+  .form{
+    width: 100%;
   }
 }

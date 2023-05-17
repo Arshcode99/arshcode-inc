@@ -27,7 +27,7 @@ const Navbar = () => {
       </div>
       <div className={styles.links} id='menu' style={{ display }}>
         <Link href="/">Home</Link>
-        <Link href="/">Services</Link>
+        <Link href="/services">Services</Link>
         <Link href="/">Products</Link>
         <Link href="/">Portfolio</Link>
         <Link href="/">Blogs</Link>
